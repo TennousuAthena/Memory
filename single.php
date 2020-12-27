@@ -59,7 +59,7 @@ setPostViews(get_the_ID()); ?>
 									$wechat_image_id = cs_get_option( 'memory_wechat_image' );
 									$wechat_attachment = wp_get_attachment_image_src( $wechat_image_id, 'full' );
 									if( cs_get_option( 'memory_alipay_image' ) && cs_get_option( 'memory_wechat_image' ) ){ ?>
-									<h4>扫一扫支付</h4>
+									<h4>扫一扫支付</h3>
 									<img class="alipay chosen" src="<?php echo $alipay_attachment[0]; ?>"/>
 									<img class="wechatpay" src="<?php echo $wechat_attachment[0]; ?>"/>
 									<div class="pay-chose">
@@ -67,10 +67,10 @@ setPostViews(get_the_ID()); ?>
 										<a class="wechatbutton"><img src="<?php bloginfo('template_url'); ?>/img/wechat.png"/></a>
 									</div>											
 									<?php } else if ( cs_get_option( 'memory_alipay_image' ) && !cs_get_option( 'memory_wechat_image' ) ) { ?>
-									<h4>扫一扫支付</h4>
+									<h4>扫一扫支付</h3>
 									<img class="alipay chosen" src="<?php echo $alipay_attachment[0]; ?>"/>											
 									<?php } else if ( !cs_get_option( 'memory_alipay_image' ) && cs_get_option( 'memory_wechat_image' ) ) { ?>
-									<h4>扫一扫支付</h4>
+									<h4>扫一扫支付</h3>
 									<img class="wechatpay chosen" src="<?php echo $wechat_attachment[0]; ?>"/>												
 									<?php } else { ?>
 									<h4>作者尚未添加打赏二维码！</h3>
@@ -79,7 +79,7 @@ setPostViews(get_the_ID()); ?>
 							</div>
 						</div>
                         <div class="post-footer">
-							<div class="post-copyright">本站文章除注明转载/出处外，均为本站原创或翻译。若要转载请注明出处，尊重他人劳动成果。<br/>转载请注明出处链接 : <a href="<?php echo get_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo get_permalink($post->ID);?></a></div>
+							<div class="post-copyright">本作品采用<a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。<br/>转载请注明出处链接 : <a href="<?php echo get_permalink($post->ID);?>" title="<?php echo $post->post_title; ?>"><?php echo get_permalink($post->ID);?></a></div>
                         </div>                            
                     </article>
                 </div>
