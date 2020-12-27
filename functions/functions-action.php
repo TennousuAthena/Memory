@@ -364,7 +364,7 @@ function memory_comment($comment, $args, $depth) {
 		<div class="commentator-comment" id="comment-<?php comment_ID(); ?>"><span class="commentator-name"><?php printf(__('<span class="author-name">%s</span> '), get_comment_author_link()); if ($comment->user_id == '1') { ?><i class="memory memory-certify"></i><?php } ?></span> <?php echo get_author_class($comment->comment_author_email,$comment->user_id); ?>
             <div class="comment-chat">
 				<div class="comment-comment">
-					<?php if ($comment->comment_approved == '0') : ?><p>你的评论正在审核，稍后会显示出来！</p><?php endif; ?>
+					<?php if ($comment->comment_approved == '0') : ?><small style="color: gray;">[您的评论正在审核，稍后会显示出来！]</small><?php endif; ?>
 					<?php comment_text(); ?>
 					<div class="comment-info">
 						<span class="comment-time"><?php echo human_time_diff(get_comment_date('U',$comment->comment_ID), current_time('timestamp')) . '前'; ?></span>
@@ -521,7 +521,7 @@ function ajax_comment_callback(){
         <div class="commentator-comment" id="comment-<?php comment_ID(); ?>"><span class="commentator-name"><?php printf(__('<span class="author-name">%s</span> '), get_comment_author_link()); if ($comment->user_id == '1') { ?><i class="memory memory-certify"></i><?php } ?></span> <?php echo get_author_class($comment->comment_author_email,$comment->user_id); ?>
             <div class="comment-chat">
                 <div class="comment-comment">
-                    <?php if ($comment->comment_approved == '0') : ?><p>你的评论正在审核，稍后会显示出来！</p><?php endif; ?>
+                    <?php if ($comment->comment_approved == '0') : ?><small style="color: gray;">[您的评论正在审核，稍后会显示出来！]</small><?php endif; ?>
                     <?php comment_text(); ?>
                     <div class="comment-info">
                         <span class="comment-time"><?php echo human_time_diff(get_comment_date('U',$comment->comment_ID), current_time('timestamp')) . '前'; ?></span>
