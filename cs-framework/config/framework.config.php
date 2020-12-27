@@ -124,22 +124,10 @@ $options[]   = array(
   'icon'     => 'fa fa-address-book',
   'fields'   => array(
     array(
-      'id'      => 'memory_qq',
-      'type'    => 'text',
-      'title'   => 'QQ号',
-      'desc'    => '您的QQ号，默认会自动为您生成添加链接，如不填写则不显示该项。',
-    ),
-    array(
       'id'      => 'memory_email',
       'type'    => 'text',
       'title'   => '邮箱地址',
       'desc'    => '您的邮箱地址，如不填写则不显示该项。',
-    ),
-    array(
-      'id'      => 'memory_qqqun',
-      'type'    => 'text',
-      'title'   => 'QQ群加群链接',
-      'desc'    => 'QQ群加群链接，如不填写则不显示该项。',
     ),
     array(
       'id'      => 'memory_weibo',
@@ -154,9 +142,27 @@ $options[]   = array(
       'desc'    => 'Github地址，如不填写则不显示该项。',
     ),
     array(
+      'id'      => 'memory_twitter',
+      'type'    => 'text',
+      'title'   => 'Twitter',
+      'desc'    => 'Twitter地址，如不填写则不显示该项。',
+    ),
+    array(
+      'id'      => 'memory_steam',
+      'type'    => 'text',
+      'title'   => 'Steam',
+      'desc'    => 'Steam地址，如不填写则不显示该项。',
+    ),
+    array(
+      'id'      => 'memory_linkedin',
+      'type'    => 'text',
+      'title'   => 'Linkedin 领英',
+      'desc'    => 'Linkedin地址，仅登录用户可见，如不填写则不显示该项。',
+    ),
+    array(
       'id'      => 'memory_zhihu',
       'type'    => 'text',
-      'title'   => '知乎地址，',
+      'title'   => '知乎地址',
       'desc'    => '知乎地址，如不填写则不显示该项。',
     ),
     array(
