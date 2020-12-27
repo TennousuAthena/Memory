@@ -11,14 +11,17 @@
 			</div>
 			<div class="catch-me">
 					<a data-content="Rss" data-balloon-pos="up" target="_blank" href="<?php echo get_bloginfo('rss2_url'); ?>"><i class="memory memory-rss"></i></a>
-					<?php if(cs_get_option( 'memory_qq' )) { ?>
-					<a data-content="QQ" data-balloon-pos="up" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo cs_get_option( 'memory_qq' ); ?>&site=qq&menu=yes" rel="nofollow"><i class="memory memory-qq"></i></a>
-					<?php } ?>
-					<?php if(cs_get_option( 'memory_qqqun' )) { ?>
-					<a data-content="QQ群" data-balloon-pos="up" target="_blank" href="<?php echo cs_get_option( 'memory_qqqun' ); ?>" rel="nofollow"><i class="memory memory-qqqun"></i></a>
-					<?php } ?>
 					<?php if(cs_get_option( 'memory_weibo' )) { ?>
 					<a data-content="微博" data-balloon-pos="up" target="_blank" href="<?php echo cs_get_option( 'memory_weibo' ); ?>" rel="nofollow"><i class="memory memory-weibo"></i></a>
+					<?php } ?>
+					<?php if(cs_get_option( 'memory_twitter' )) { ?>
+					<a data-content="Twitter" data-balloon-pos="up" target="_blank" href="<?php echo cs_get_option( 'memory_twitter' ); ?>" rel="nofollow"><i class="memory memory-twitter"></i></a>
+					<?php } ?>
+					<?php if(cs_get_option( 'memory_steam' )) { ?>
+					<a data-content="Steam" data-balloon-pos="up" target="_blank" href="<?php echo cs_get_option( 'memory_steam' ); ?>" rel="nofollow"><i class="memory memory-steam"></i></a>
+					<?php } ?>
+					<?php if(cs_get_option( 'memory_linkedin' ) && is_user_logged_in()) { ?>
+					<a data-content="Linkedin" data-balloon-pos="up" target="_blank" href="<?php echo cs_get_option( 'memory_linkedin' ); ?>" rel="nofollow"><i class="memory memory-linkedin"></i></a>
 					<?php } ?>
 					<?php if(cs_get_option( 'memory_github' )) { ?>
 					<a data-content="GitHub" data-balloon-pos="up" target="_blank" href="<?php echo cs_get_option( 'memory_github' ); ?>" rel="nofollow"><i class="memory memory-github"></i></a>
