@@ -80,7 +80,7 @@ $options[]      = array(
     array(
       'id'      => 'memory_record',
       'type'    => 'text',
-      'title'   => '备案号',
+      'title'   => '<a href="https://icp.gov.moe" target="_blank">萌备案</a>号',
       'desc'    => '展现在主题页脚的备案号。',
       'default' => '未备案',
     ),
